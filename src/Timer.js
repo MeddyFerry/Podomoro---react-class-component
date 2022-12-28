@@ -26,9 +26,10 @@ class Timer extends Component {
     if (this.state.isTimerStarted) {
       clearInterval(this.timerId);
 
-      // si vrai
+      this.props.saveTime(this.state.time);
+
       this.setState({
-        // alors je le mets à faux => car on veut arrêter le timer
+        // si true, alors je le mets à faux => car on veut arrêter le timer
         isTimerStarted: false,
         time: 0,
       });
