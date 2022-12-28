@@ -11,10 +11,13 @@ class Timer extends Component {
   // va réagir a l'event click de mon button pour changer la valeur de mon Bool 'isTimerStarted'.
   handleStartTimer = () => {
     if (this.state.isTimerStarted) {
+      clearInterval(this.timerId);
+
       // si vrai
       this.setState({
         // alors je le mets à faux => car on veut arrêter le timer
         isTimerStarted: false,
+        time: 0,
       });
     } else {
       // isTimerStarted est false => On veut démarrer le timer
