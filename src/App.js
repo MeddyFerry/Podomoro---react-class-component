@@ -13,13 +13,12 @@ class App extends Component {
   }
   //timer doit update notre state sinon aucun sens donc :
   saveTime = (time) => {
-    const newTimers = [...this.state.timers]; // copie de timers qui se trouve dans le state
-    newTimers.push(time);
-
+    const date = new Date();
     this.setState({
-      timers: newTimers, // ici on crée un tableau avec une nvl valeur
+      timers: [...this.state.timers, { time, date }],
     });
   };
+
   render() {
     return (
       <div className="app">
