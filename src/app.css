@@ -1,3 +1,56 @@
-.app {
-  margin: 4rem;
+.container {
+	background-color: #e07a5f;
+	font-family: 'Clash Display', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
 };
+
+
+.main-Title {
+	font-weight: 600;
+	font-size: 3rem;
+	color: #252422;
+}
+.clock-timer {
+	font-weight: bolder;
+	font-size: 4rem;
+	color: #252422;
+}
+
+.clock-btn {
+	padding: 0.6rem 1.8rem;
+	font-size: 1.8rem;
+	border-radius: 20px;
+	color: #e07a5f;
+	border: none;
+}
+
+.clock-btn-start {
+	background-color: #252422;
+}
+
+.clock-btn-stop {
+	background-color: #252422;
+}
+
+.clock-btn:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+.timers-table {
+	margin-top: 3rem;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.timers-table th,
+.timers-table td {
+	padding: 0.5rem;
+	text-align: left;
+}
+
+.timers-table th {
+	border-bottom: 1px solid #252422
+}

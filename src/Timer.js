@@ -1,4 +1,6 @@
 import { Component } from "react";
+import "./app.css";
+
 // function tooling de conversion de mes secondes en format précis
 function secondsToHms(timeInSeconds) {
   timeInSeconds = Number(timeInSeconds);
@@ -51,8 +53,11 @@ class Timer extends Component {
   render() {
     return (
       <>
-        <p>{secondsToHms(this.state.time)}</p>
-        <button onClick={this.handleStartTimer}>
+        <p className="clock-timer">{secondsToHms(this.state.time)}</p>
+        <button
+          className="clock-btn clock-btn-start clock-btn-stop "
+          onClick={this.handleStartTimer}
+        >
           {this.state.isTimerStarted ? "stop" : "start"}
         </button>
       </>

@@ -21,8 +21,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
-        <h1>Podomoro Timer</h1>
+      <div className="container">
+        <h1 className="main-Title "> PODO TIMER</h1>
         <Timer saveTime={this.saveTime} />
         <TimersTable timers={this.state.timers} />
       </div>

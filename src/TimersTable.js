@@ -14,7 +14,7 @@ function secondsToHms(timeInSeconds) {
 class TimersTable extends Component {
   render() {
     return (
-      <table>
+      <table className="timers-table">
         <thead>
           <tr>
             <th> Date</th>
