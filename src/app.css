@@ -1,38 +1,55 @@
 .container {
-	background-color: #e07a5f;
+	background-color: #faedcd;
 	font-family: 'Clash Display', sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	height: 100vh;
+	padding-left: 3rem;
+	padding-right: 3rem;
+
+	color: #403d39
+	
+
 };
 
+h1{
+
+}
 
 .main-Title {
 	font-weight: 600;
 	font-size: 3rem;
-	color: #252422;
+	font-weight: bold;
+	color: #403d39;
+	margin-top: 3rem;
 }
+
 .clock-timer {
 	font-weight: bolder;
 	font-size: 4rem;
-	color: #252422;
+	color: #c75146;
+	margin-bottom: 3rem;
+	margin-top: 3rem;
+
 }
 
 .clock-btn {
 	padding: 0.6rem 1.8rem;
 	font-size: 1.8rem;
 	border-radius: 20px;
-	color: #e07a5f;
+	color: #faedcd;
 	border: none;
+	font-family: 'Clash Display', sans-serif;
+
 }
 
 .clock-btn-start {
-	background-color: #252422;
+	background-color: #c75146;
 }
 
 .clock-btn-stop {
-	background-color: #252422;
+	background-color: #c75146;
 }
 
 .clock-btn:hover {
@@ -52,5 +69,5 @@
 }
 
 .timers-table th {
-	border-bottom: 1px solid #252422
+	border-bottom: 1px solid #c75146
 }
